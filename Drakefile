@@ -1,0 +1,14 @@
+tmp/raw_in.csv <- [shell]
+    rm $[OUTPUT]
+    for i in data/*.xlsx
+        do python ./src/xlsx2csv.py $i >> $[OUTPUT]
+    done
+
+tmp/sorted_in.csv <- tmp/raw_in.csv [shell]
+    sort -n $[INPUT] | uniq > $[OUTPUT]
+
+tmp/id_sorted_in.csv <- tmp/sorted_in.csv [shell]
+    python ./src/csv2csvid.py $[INPUT] > $[OUTPUT]
+
+out.txt <- tmp/id_sorted_in.csv [shell]
+    python ./src/simpleapriori.py $[INPUT] 0.03 1.0 > $[OUTPUT]
