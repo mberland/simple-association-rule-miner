@@ -18,10 +18,10 @@ all cells should either be 0 or 1
 
 so like this:
 
-Name | TAG1 | TAG2 | ... | TAGN
-____ | ____ | ____ | ___ | ___
-Bill | 1 | 0 | ... | 1
-Alice| 0 | 0 | ... | 1
+| Name | TAG1 | TAG2 | ... | TAGN |
+| ____ | ____ | ____ | ___ | ___ |
+| Bill | 1 | 0 | ... | 1 |
+| Alice| 0 | 0 | ... | 1 |
 
 then just run "drake" in the top level directory
 
