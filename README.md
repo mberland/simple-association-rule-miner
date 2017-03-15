@@ -5,10 +5,12 @@ if you fork/use, please credit: matthew berland
 license is gpg v3
 
 this is not supported, don't email me please!
-it is totally hacked up & broken - feel free to submit a pull req to fix it
-it is public because someone might find it useful, but that is it
 
-python 2 only because i am lazy
+it is totally hacked up & broken - feel free to submit a pull req to fix it!
+
+it is public because someone might find it useful, but that is it!
+
+python 2 only because i am lazy.
 
 how to use:
 `brew install drake` (on a mac) 
